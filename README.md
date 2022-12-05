@@ -1,4 +1,4 @@
-![BalencedVeil717](https://user-images.githubusercontent.com/105261700/194753249-94bd02f4-e347-4d63-b45d-15932d75a86a.png)
+![BalencedVeil717](https://avatars.githubusercontent.com/u/105261700?s=400&u=60471ac01f36050538cc04062ee6c09e5a72f8c7&v=4)
 
 <h1 align="center">Hi 👋, I'm BalencedVeil717</h1>
 <h3 align="center">A Human i.e. Your Friend</h3>

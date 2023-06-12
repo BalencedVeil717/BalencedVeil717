@@ -12,7 +12,7 @@
 |     👯| **I’m looking to collaborate on** |`-`|*`Website Designing with CSS`*              |
 |     🤔| **I’m looking for help with** |`-`|*`Animated CSS Objects`*              |
 |     💬| **Ask me about** |`-`|*`Space/Minecraft/Etc.`*              |
-|     📫| **How to reach me:** |`-`|*[Yveltal Eternity](https://discord.gg/RdKEGKCvKA)*              |
+|     📫| **How to reach me:** |`-`|*[Yveltal Eternity](https://discord.gg/9VvWKPsegY)*              |
 |     😄|**Pronouns:** |`-`|*`Optimus Prime`*              |
 |     ⚡| **Fun fact:** |`-`|*`I am a bit colorblind`*              |
 

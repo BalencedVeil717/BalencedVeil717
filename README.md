@@ -1,4 +1,4 @@
-# _“A jack of all trades is a master of none, but oftentimes better than a master of one.”_
+![Quote](assets/quoote.jpg)
 
 ## What I Do
 I spend time with computers, code, and ideas that make me curious.  

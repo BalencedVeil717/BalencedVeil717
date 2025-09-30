@@ -1,16 +1,26 @@
-## Hi there 👋
+# _“A jack of all trades is a master of none, but oftentimes better than a master of one.”_
 
-<!--
-**BalencedVeil717/BalencedVeil717** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## What I Do
+I spend time with computers, code, and ideas that make me curious.  
+Most of it is exploring, experimenting, and keeping things simple.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I Learn
+I try to learn anything I can, but mostly:
+- algorithms, backend logic, and data handling  
+- programming languages and better coding practices  
+- building small projects across different stacks  
+- revisiting old mistakes and fixing them with new skills  
+
+---
+
+## Mindset
+- Make it exist first, make it better later  
+- Less clutter, more clarity  
+- Build to learn, not just to ship  
+- The process is as important as the outcome  
+
+---
+
+Thats all for now.

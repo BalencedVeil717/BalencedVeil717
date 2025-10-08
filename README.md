@@ -1,4 +1,4 @@
-![Quote](./quoote.jpg)
+![Quote](./quote.png)
 
 ## What I Do
 I spend time with computers, code, and ideas that make me curious.  

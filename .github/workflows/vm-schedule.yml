@@ -5,30 +5,31 @@ on:
     - cron: '30 0 * * *'   # 00:30 UTC = 6:00 AM IST -> stop
     - cron: '30 9 * * *'   # 09:30 UTC = 3:00 PM IST -> start
   workflow_dispatch:
+    inputs:
+      action:
+        description: 'start or stop'
+        required: true
+        default: 'start'
 
 jobs:
-  vm-action:
+  stop-vm:
+    if: github.event.schedule == '30 0 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'stop')
     runs-on: ubuntu-latest
     steps:
       - name: Azure Login
         uses: azure/login@v2
         with:
           creds: '{"clientId":"${{ secrets.AZURE_CLIENT_ID }}","clientSecret":"${{ secrets.AZURE_CLIENT_SECRET }}","subscriptionId":"${{ secrets.AZURE_SUBSCRIPTION_ID }}","tenantId":"${{ secrets.AZURE_TENANT_ID }}"}'
-
-      - name: Determine action based on UTC time
-        id: decide
-        run: |
-          HOUR=$(date -u +%H)
-          if [ "$HOUR" == "00" ]; then
-            echo "action=stop" >> $GITHUB_OUTPUT
-          else
-            echo "action=start" >> $GITHUB_OUTPUT
-          fi
-
       - name: Stop VM
-        if: steps.decide.outputs.action == 'stop'
         run: az vm deallocate --resource-group minecraft-vm_group --name minecraft-vm --no-wait
 
+  start-vm:
+    if: github.event.schedule == '30 9 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'start')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: '{"clientId":"${{ secrets.AZURE_CLIENT_ID }}","clientSecret":"${{ secrets.AZURE_CLIENT_SECRET }}","subscriptionId":"${{ secrets.AZURE_SUBSCRIPTION_ID }}","tenantId":"${{ secrets.AZURE_TENANT_ID }}"}'
       - name: Start VM
-        if: steps.decide.outputs.action == 'start'
         run: az vm start --resource-group minecraft-vm_group --name minecraft-vm --no-wait

@@ -2,8 +2,10 @@ name: Minecraft VM Scheduler
 
 on:
   schedule:
-    - cron: '30 0 * * *'   # 00:30 UTC = 6:00 AM IST -> stop
-    - cron: '30 9 * * *'   # 09:30 UTC = 3:00 PM IST -> start
+    - cron: '0 3 * * *'
+      timezone: "Asia/Kolkata"   # 3:00 AM IST -> stop
+    - cron: '0 15 * * *'
+      timezone: "Asia/Kolkata"   # 3:00 PM IST -> start
   workflow_dispatch:
     inputs:
       action:
@@ -13,7 +15,7 @@ on:
 
 jobs:
   stop-vm:
-    if: github.event.schedule == '30 0 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'stop')
+    if: github.event.schedule == '0 3 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'stop')
     runs-on: ubuntu-latest
     steps:
       - name: Azure Login
@@ -24,7 +26,7 @@ jobs:
         run: az vm deallocate --resource-group minecraft-vm_group --name minecraft-vm --no-wait
 
   start-vm:
-    if: github.event.schedule == '30 9 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'start')
+    if: github.event.schedule == '0 15 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'start')
     runs-on: ubuntu-latest
     steps:
       - name: Azure Login

@@ -9,10 +9,4 @@ I try to learn anything I can, but mostly:
 - building small projects across different stacks  
 - revisiting old mistakes and fixing them with new skills
 
-## Mindset
-- Make it exist first, make it better later  
-- Less clutter, more clarity  
-- Build to learn, not just to ship  
-- The process is as important as the outcome  
-
-Thats all for now.
+Thats it for now.

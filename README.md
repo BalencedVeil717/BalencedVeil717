@@ -1,5 +1,3 @@
-![Quote](./quote.png)
-
 ## What I Do
 I spend time with computers, code, and ideas that I'm curious about.  
 Most of it is exploring, experimenting, and trying out new things.
